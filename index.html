@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mad Libs</title>
+    <link rel="stylesheet" href="css/sytle.css">
+</head>
+<body>
+    <img class="img-fluid logo" src="img/MadLibsTheGameLogo.png" alt="">
+    <form id="madLibsForm">
+        <label for="noun">Noun:</label>
+        <input type="text" id="noun" name="noun" required>
+
+        <label for="verb">Verb:</label>
+        <input type="text" id="verb" name="verb" required>
+
+        <label for="adjective">Adjective1:</label>
+        <input type="text" id="adjective1" name="adjective1" required>
+        
+        <label for="adjective">Adjective2:</label>
+        <input type="text" id="adjective2" name="adjective2" required>
+
+        <label for="adverb">Adverb:</label>
+        <input type="text" id="adverb" name="adverb" required>
+
+        <button type="submit">Generate Story</button>
+    </form>
+
+    <div class="story-output" id="storyOutput">
+        <p id="storyText"></p>
+    </div>
+
+    <script src="scripts/app.js"></script>
+</body>
+</html>
